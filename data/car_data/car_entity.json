@@ -1,0 +1,6732 @@
+{
+  "meta": {
+    "name": "automotive_tech_industry_entity_centric",
+    "description": "Merged entity-centric knowledge graph for Chinese automotive industry background and automotive technology QA.",
+    "source_files": [
+      "data\\car_data\\entity_centric.json",
+      "data\\car_data\\tech_entity_centric.json"
+    ],
+    "entities": 338,
+    "total_attributes": 277,
+    "total_relations": 217,
+    "merge_strategy": "Same-name entities are merged; attributes are unioned; duplicate relations are removed by relation-object key; technical categories are preferred over generic entity categories.",
+    "focus": "automotive technology graph with industry context"
+  },
+  "entities": {
+    "1+N中央计算+区域控制架构": {
+      "type": "entity",
+      "category": "EEArchitecture",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "芯驰科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "芯驰科技于2024年4月25日发布“1+N”中央计算+区域控制架构及新一代中央处理器和区域控制 器车规芯片"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "15万元价位段的新能源汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "智能化技术的下沉",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "在大众化 市场，主流的10万～15万元价位段的新能源汽车通过智能化技术的下沉，满足了大众家用需求"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "192线激光雷达": {
+      "type": "entity",
+      "category": "Sensor",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "华为",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年5月31日，华为问界新M7 Ultra正式上市，相较于原版本在智驾能力方面进行了重大升级，采用了192线激光 雷达等先进感知硬件"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "2000MPa激光拼焊门环": {
+      "type": "entity",
+      "category": "MaterialProcess",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": [
+            "岚图汽车",
+            "育材堂"
+          ],
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "育材堂与岚图汽车联合发布的2000MPa激光拼焊门环，集成焊丝强韧化冶金、焊缝缺陷控制等技术，全球首次将 2000MPa激光拼焊门环应用于量产车型"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "2000MPa激光拼焊门环技术": {
+      "type": "entity",
+      "attributes": {
+        "强度": "2000MPa",
+        "吸能能力提升": 27
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "24路输出": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "4D成像技术": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "4D成像雷达": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "赛恩领动",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2.智能驾驶系统与产品 赛恩领动发布4D成像雷达"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "59度大电量增混电池": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "高能量密度正负极材料和叠片制造工艺"
+        },
+        {
+          "relation": "研发企业",
+          "object": "蜂巢能源",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "蜂巢能源推出59度大电量增混电池，采用高能量密度正负极材料和叠片制造工艺，支持快速充电和优异低温性能，通过 多项安全测试"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "5R6V单芯片行泊一体方案开发": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "600kW恒功率输出": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "720kW独立风道超充系统": {
+      "type": "entity",
+      "attributes": {
+        "采用": "全新独立风道技术",
+        "单枪最大支持": "600kW恒功率输出",
+        "整机噪声小于": "65dB",
+        "主机能量转换效率": "95%以上",
+        "单枪最大功率": "600kW",
+        "噪声": "65dB",
+        "效率": "95%以上"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "优优绿能",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "优优绿能的720kW独立风道超充系统，采用全新独立风道技术，单枪最大支持600kW恒功率输出，整机噪声小于 65dB，主机能量转换效率95%以上"
+          ]
+        }
+      ],
+      "category": "ChargingTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "800V": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "超快充",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年4月，威睿展示了800V SiC四电机分布式驱动系统，采用深度集成设计，实现超高能效和快速响应"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "800V SiC四电机分布式驱动系统": {
+      "type": "entity",
+      "attributes": {
+        "采用": "深度集成设计",
+        "实现": "超高能效和快速响应"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "威睿",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年4月，威睿展示了800V SiC四电机分布式驱动系统，采用深度集成设计，实现超高能效和快速响应"
+          ]
+        }
+      ],
+      "category": "DriveSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "800V高压平台": {
+      "type": "entity",
+      "category": "ChargingTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "超快充",
+          "sources": [
+            "高压快充技术资料"
+          ],
+          "evidence": [
+            "800V高压平台提升补能效率"
+          ]
+        }
+      ],
+      "sources": [
+        "高压快充技术资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "940nm超长距激光雷达M3": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年1月",
+        "发布场合": "CES展会",
+        "测距能力": "300m@10%",
+        "角分辨率": "0.05°×0.05°"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "速腾聚创",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "速腾聚创发布940nm超长距激光雷达M3"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "AD 5.0智驾大模型": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年9月29日",
+        "发布场合": "全球智能汽车产业大会",
+        "功能": "城市及高速场景NOA、智能泊车"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "Momenta",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年9月29日，Momenta在全球智能汽车产业大会上发布了AD 5.0智驾大模型"
+          ]
+        }
+      ],
+      "category": "AlgorithmTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "ADS": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "华为",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "华为发布乾崑智驾ADS 3.0"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "ADS 3.0": {
+      "type": "entity",
+      "category": "ADASSystem",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "华为",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "华为发布乾崑智驾ADS 3.0"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "ANP3 Pro": {
+      "type": "entity",
+      "category": "ADASSystem",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "百度Apollo",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "百度Apollo于2024年4月23日发布的纯视觉城市领航辅助驾驶产品ANP3 Pro，采用单Orin芯片和11个摄 像头等传感器配置，实现高速和城市NOA功能"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "C-Pilot 5.0": {
+      "type": "entity",
+      "category": "ADASSystem",
+      "attributes": {
+        "算力": "1000TOPS"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "奇瑞",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "奇瑞在2024年10月18日发布了面向未来的高阶智能驾驶技术方案C-Pilot 5.0，该方案车端算力可达1000 TOPS，将实 现车位到车位智驾功能"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "C-V2X": {
+      "type": "entity",
+      "category": "CommunicationTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": [
+            "车车通信",
+            "车路通信",
+            "车云通信",
+            "车人通信",
+            "车路协同"
+          ],
+          "sources": [
+            "车联网技术资料",
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "C-V2X支持V2V/V2I/V2N/V2P",
+            "宸芯科技推出新一代车规级C-V2X芯片平台"
+          ]
+        }
+      ],
+      "sources": [
+        "车联网技术资料",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "CTP 3.0": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "CX1920": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "软硬解耦",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "CX1920支持软硬解耦，灵活适 配不同类型的车辆E/E架构，可提升智驾安全性并降低整体成本"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "Dimensity Auto座舱平台系统单芯片SoC": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年3月19日"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "联发科",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "联发科推出Dimensity Auto座舱平台系统单芯片SoC"
+          ]
+        }
+      ],
+      "category": "Chip",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "EMB将实现小规模量产": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "应用",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2025年，随着相关法规标准的逐步完善，EMB将实现小规模量产搭载应用"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "GARCIA OS": {
+      "type": "entity",
+      "attributes": {
+        "采用": "基于多路相机输入的BEV+Transformer感知框架技术",
+        "计划装车搭载时间": "2026年"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "广汽集团",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "广汽集团于2024年4月12日发布国内首个无图纯视觉智驾方案GARCIA OS，采用基于多路相机输入的BEV+Transformer 感知框架技术"
+          ]
+        }
+      ],
+      "category": "ADASSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "GB 38031-2025": {
+      "type": "entity",
+      "category": "Standard",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "规范对象",
+          "object": "动力蓄电池",
+          "sources": [
+            "电动汽车用动力蓄电池安全要求"
+          ],
+          "evidence": [
+            "规定动力蓄电池安全要求"
+          ]
+        }
+      ],
+      "sources": [
+        "电动汽车用动力蓄电池安全要求",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "GB/T 18487.1": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "规范对象",
+          "object": "传导充电系统",
+          "sources": [
+            "电动汽车传导充电系统通用要求"
+          ],
+          "evidence": [
+            "规定传导充电系统通用要求"
+          ]
+        }
+      ],
+      "sources": [
+        "电动汽车传导充电系统通用要求",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "GB/T 27930": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "规范对象",
+          "object": "非车载充电机与电动汽车通信",
+          "sources": [
+            "充电通信协议"
+          ],
+          "evidence": [
+            "定义充电机与电动汽车之间通信协议"
+          ]
+        }
+      ],
+      "sources": [
+        "充电通信协议",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "GB/T 31467": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "规范对象",
+          "object": "锂离子动力蓄电池包和系统",
+          "sources": [
+            "动力电池包和系统测试规程"
+          ],
+          "evidence": [
+            "定义动力电池包和系统测试规程"
+          ]
+        }
+      ],
+      "sources": [
+        "动力电池包和系统测试规程",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "GEA智能新能源架构": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "搭载",
+          "object": "中央大脑和区域服务化架构"
+        },
+        {
+          "relation": "支持",
+          "object": "纯电、混动、增程等多种能源形式"
+        },
+        {
+          "relation": "研发企业",
+          "object": "吉利",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年4月，吉利发布了GEA智能新能源架构，搭载中央大脑和区域服务化架构，实现算力集中和软件逻辑分层解耦，支持纯 电、混动、增程等多种能源形式"
+          ]
+        }
+      ],
+      "category": "VehiclePlatform",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "KT5030A": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "凯芯科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "凯芯科技发布KT5030A高精度定位芯片"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "KT5030A高精度定位芯片": {
+      "type": "entity",
+      "attributes": {
+        "定位精度": "厘米级",
+        "车规认证": "AEC-Q100 Grade2"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "凯芯科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "凯芯科技发布KT5030A高精度定位芯片"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "L2级辅助 驾驶": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "渗透率": "55%"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "L600启晨电池": {
+      "type": "entity",
+      "category": "BatteryTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "国轩高科",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "国轩高科发布的LMFP体系L600启晨电池，实现了高能量密度和长续驶里程，同时通过了所有安全测试"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "LMFP体系L600启晨电池": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "国轩高科",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "国轩高科发布的LMFP体系L600启晨电池，实现了高能量密度和长续驶里程，同时通过了所有安全测试"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "M3": {
+      "type": "entity",
+      "category": "Sensor",
+      "attributes": {
+        "测距能力": "300m@10%",
+        "角分辨率": "0.05°×0.05°"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "速腾聚创",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "速腾聚创发布940nm超长距激光雷达M3"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "Momenta": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "AD 5.0智驾大模型"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "NOP+": {
+      "type": "entity",
+      "attributes": {
+        "实现": "高速、城区、停车场的全域智能驾驶覆盖"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "蔚来",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "蔚来发布全域领航辅助NOP+"
+          ]
+        }
+      ],
+      "category": "ADASSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "NOP智慧领航辅助驾驶系统": {
+      "type": "entity",
+      "attributes": {
+        "推出时间": "2024年7月15日",
+        "能力等级": "L2+级高阶辅助驾驶",
+        "推送方式": "OTA"
+      },
+      "relations": [
+        {
+          "relation": "依托",
+          "object": "泛亚自研的算法模型和高精地图"
+        },
+        {
+          "relation": "搭载车型",
+          "object": "别克世纪CENTURY"
+        },
+        {
+          "relation": "研发企业",
+          "object": "上汽通用",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "上汽通用推出NOP智慧领航辅助驾驶系统"
+          ]
+        }
+      ],
+      "category": "ADASSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "NVIDIA": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "NVIDIA DRIVE Orin": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {
+        "典型算力": "最高254TOPS"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "NVIDIA",
+          "sources": [
+            "NVIDIA DRIVE Orin资料"
+          ],
+          "evidence": [
+            "NVIDIA推出DRIVE Orin"
+          ]
+        }
+      ],
+      "sources": [
+        "NVIDIA DRIVE Orin资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "OTA 5.0": {
+      "type": "entity",
+      "attributes": {
+        "使冬季纯电续航里程提升": "15%～20%"
+      },
+      "relations": [
+        {
+          "relation": "引入",
+          "object": "AD Max 3.0智能驾驶系统"
+        },
+        {
+          "relation": "上车",
+          "object": "Mind GPT"
+        },
+        {
+          "relation": "研发企业",
+          "object": "理想汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "理想汽车于2023年12月发布了面向L系列的OTA 5.0升级，主要集中在智能驾驶、智能空间和智能增程三大领域"
+          ]
+        }
+      ],
+      "category": "SoftwareTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "OTA升级": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "P1电机": {
+      "type": "entity",
+      "attributes": {
+        "采用": "高转矩密度拓扑设计和高效散热方案",
+        "提升": "电机功率密度和效率",
+        "降低": "噪声",
+        "适用于": "多种工作模式"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "星驱科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "星驱科技发布的P1电机采用高转矩密度拓扑设计和高效散热方案，提升电机功率密度和效率，降低噪声，适用于多种工作模式"
+          ]
+        }
+      ],
+      "category": "MotorTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "PD4H混碳电控": {
+      "type": "entity",
+      "attributes": {
+        "采用": "Si和SiC混合功率模块",
+        "具备": "效率高、兼容性强、性能强劲等特点",
+        "峰值功率覆盖": "150～250kW",
+        "峰值功率": "150～250kW"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "汇川联合动力",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "汇川联合动力推出PD4H混碳电控，采用Si和SiC混合功率模块，具备效率高、兼容性强、性能强劲等特点，峰值功率可覆盖 150～250kW"
+          ]
+        }
+      ],
+      "category": "PowerElectronics",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "SIR-4K": {
+      "type": "entity",
+      "category": "Sensor",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "赛恩领动",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "赛恩领动于2024年1月发布了S系列高性能成像雷达SIR-4K，该雷达采用4D成像技术，具有高精度、高分辨率、强抗干扰能力 和探测范围大等特点"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "S系列高性能成像雷达SIR-4K": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年1月",
+        "技术": "4D成像",
+        "特点": "高精度、高分辨率、强抗干扰能力、探测范围大",
+        "支持自动驾驶级别": "L3～L5"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "VS919": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "VS919L": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "VS919和VS919L": {
+      "type": "entity",
+      "attributes": {
+        "支持方案": "5R6V单芯片行泊一体方案",
+        "功能": "高速NOA、自动泊车辅助"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "VS919和VS919L芯片均": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "5R6V单芯片行泊一体方案开发",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "VS919和VS919L芯片均支持5R6V单芯片行泊一体方案开发，可实现高速NOA、自动泊车辅助等功能"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "X9CC芯片作为中央计算平台": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "“1+N”中央计算+区域控制架构": {
+      "type": "entity",
+      "attributes": {
+        "中央计算平台芯片": "X9CC"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "一汽": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "一汽红旗": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "天工08底盘"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "一汽红旗天工08底盘": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "前虚拟主销双横臂+后五连杆悬架系统",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "一汽红旗天工08底盘采用前虚拟主销双横臂+后五连杆悬架系统，配备自主空气悬架系统和后轮转向系统，提供稳定的底盘性能和 灵活的低速转弯能力"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "三电机构型": {
+      "type": "entity",
+      "category": "DriveSystem",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "三电机独立驱动": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "上汽": {
+      "type": "entity",
+      "attributes": {
+        "出口量": 92.9,
+        "出口量同比增长": -15.5
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "上汽通用": {
+      "type": "entity",
+      "attributes": {
+        "成为": "国内首家推出高速领航驾驶辅助功能的合资车企"
+      },
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "NOP智慧领航辅助驾驶系统"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "上汽集团": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "半固态工艺镁合金电驱壳体"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "上海电驱动": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "第二代增程技术"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "不仅": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "智能化功能",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "极狐汽车于2024年4月11日发布全新达尔文2.0技术体系，该体系构建了七大技术板块，不仅包含智能化功能，还扩展 到动力系统、底盘技术、电池管理等领域"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "不同的SoC和架构配置": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "与英伟达联手推出了Dimensity Auto座舱平台系统单芯片SoC": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "联发科",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年3月19日，联发科宣布与英伟达联手推出了Dimensity Auto座舱平台系统单芯片SoC，旨在提 供从豪华到入门车型全覆盖的AI座舱体验"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "东风汽车": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "机舱压铸66合1一体化工艺"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国": {
+      "type": "entity",
+      "attributes": {
+        "销量": 3143.6,
+        "同比增长": 4.5,
+        "亚洲市场份额": 63.3,
+        "全球市场份额": 33.7,
+        "蝉联年数": "16年",
+        "产量": 3128.2,
+        "出口量": 585.9,
+        "出口同比增长": 19.3,
+        "汽车出口量同比增长": 19.3,
+        "海关进口量": 70.5,
+        "进口同比下降": 11.7,
+        "进口金额": 2785.4,
+        "进口金额同比下降": 16.1,
+        "进口汽车销量": 64.4,
+        "进口汽车销量同比下降": 16.3,
+        "供应全球电池材料比例": 70,
+        "供应全球动力电池比例": 60,
+        "汽车出口量占当年总销量比重": 18.64,
+        "乘用车出口量": 495.5,
+        "乘用车出口量同比增长": 19.7,
+        "乘用车出口量占出口总量比重": 84.6,
+        "商用车出口量": 90.4,
+        "商用车出口量同比增长": 17.4,
+        "商用车出口量占出口总量比重": 15.4,
+        "轿车出口量": 127.9,
+        "轿车出口量同比增长": 17.7,
+        "轿车出口量占出口总量比重": 21.8,
+        "SUV出口量": 356.4,
+        "SUV出口量同比增长": 20.3,
+        "SUV出口量占出口总量比重": 60.8,
+        "MPV出口量": 6.1,
+        "MPV出口量同比增长": 26.6,
+        "MPV出口量占出口总量比重": "1.0%",
+        "交叉乘用车出口量": 5.1,
+        "交叉乘用车出口量同比增长": 16.2,
+        "交叉乘用车出口量占出口总量比重": 0.9,
+        "货车出口量": 56.9,
+        "货车出口量同比增长": 24.2,
+        "货车出口量占出口总量比重": 9.7,
+        "客车出口量": 12.5,
+        "客车出口量同比增长": 15.8,
+        "客车出口量占出口总量比重": 2.1,
+        "半挂牵引车出口量": 13.5,
+        "半挂牵引车出口量同比增长": -1.2,
+        "半挂牵引车出口量占出口总量比重": 2.3,
+        "传统燃油汽车出口量": 457.4,
+        "传统燃油汽车出口量同比增长": 23.5,
+        "传统燃油汽车出口量占出口总量比重": 78.1,
+        "新能源汽车出口量": 11.4,
+        "新能源汽车出口量同比增长": 6.7,
+        "新能源汽车出口量占出口总量比重": 21.9,
+        "纯电动汽车出口量": 98.7,
+        "纯电动汽车出口量同比增长": -10.4,
+        "纯电动汽车出口量占出口总量比重": 16.9,
+        "插电式混合动力汽车出口量": 29.7,
+        "插电式混合动力汽车出口量同比增长": 1.9,
+        "插电式混合动力汽车出口量占出口总量比重": 5.1,
+        "经济": "稳定增长"
+      },
+      "relations": [
+        {
+          "relation": "蝉联",
+          "object": "全球第一大汽车消费市场"
+        },
+        {
+          "relation": "新能源汽车出口",
+          "object": [
+            "比利时",
+            "巴西",
+            "英国",
+            "泰国",
+            "菲律宾"
+          ]
+        },
+        {
+          "relation": "实施",
+          "object": [
+            "积极的财政政策",
+            "稳健的货币政策"
+          ]
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国TOP10企业": {
+      "type": "entity",
+      "attributes": {
+        "合计销量": 2670.4,
+        "同比增长": 3.8,
+        "国内市场份额": 84.9,
+        "占比下降": 0.5,
+        "出口量": 505.7,
+        "出口同比增长": 17.8,
+        "出口份额": 86.6
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国乘用车": {
+      "type": "entity",
+      "attributes": {
+        "产量": 2747.7,
+        "销量": 2756.3,
+        "同比增长": 5.8,
+        "出口量": 495.5,
+        "出口同比增长": 19.7
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国商用车": {
+      "type": "entity",
+      "attributes": {
+        "产量": 380.5,
+        "销量": 387.3,
+        "同比下降": 3.9,
+        "出口量": 90.4,
+        "出口同比增长": 17.5
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国新能源乘用车": {
+      "type": "entity",
+      "attributes": {
+        "销量": "1229.0万辆",
+        "同比增长": 35.8,
+        "行业占比": 95.5
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国新能源商用车": {
+      "type": "entity",
+      "attributes": {
+        "销量": 57.6,
+        "同比增长": 28.8
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国新能源汽车": {
+      "type": "entity",
+      "attributes": {
+        "销量": 1286.6,
+        "同比增长": 35.5,
+        "排名": "全球第一",
+        "连续年数": "10年",
+        "渗透率": 38.9,
+        "产量": 1288.8,
+        "出口量": 128.4,
+        "出口同比增长": 6.7,
+        "占汽车总销量比重": 40.9,
+        "占比提升": 9.3
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "中国汽车工程学会": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "深入调研与分析",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "中国汽车工程学会通过深入调研与分析，发布了2025年度中国汽车十大技术 趋势，这些趋势涵盖了节能、智能、安全等多个关键领域，为行业发展指明了方向"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "中央处理器和区域控制器车规芯片": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "芯驰科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "芯驰科技发布新一代中央处理器和区域控制器车规芯片"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "中央计算平台": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "丰富的产品": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "为旌科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "御行系列域控芯片"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "主机能量": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "效率": "95%以上"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "乾崑智驾ADS 3.0": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年4月24日",
+        "架构": "GOD/PDP端到端架构",
+        "防碰撞系统": "CAS3.0",
+        "功能": "车位到车位智驾领航NCA、泊车代驾全场景商用"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "二手车交易车辆": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "年限进一步向3",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "从车龄结构看，二手车交易车辆使用年限进一步向3～6年的区间集中，2024年全年成交量占比为47.7%，较上一年同期增加了4.2个百分点"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "交通信号灯等操作": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "优优绿能": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "720kW独立风道超充解决方案"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "传导充电系统": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "但俄罗斯政府": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "大幅提升 报废税及融资利率等方式",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "俄罗斯连续两年成为中国汽车出口第一大目的地市场，但俄罗斯政府通过大幅提升 报废税及融资利率等方式，倒逼外国品牌加快本地化生产进程，市场下滑风险较大"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "元戎启行": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "充电堆": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "适用场景",
+          "object": "各类大功 率充电场景",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该充电堆适用于各类大功 率充电场景，满足多车型补电需求，提升了充电设施的灵活性和运营效率"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "充电堆适": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "用于",
+          "object": "各类大功 率充电场景",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该充电堆适用于各类大功 率充电场景，满足多车型补电需求，提升了充电设施的灵活性和运营效率"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "兆瓦级充电堆": {
+      "type": "entity",
+      "attributes": {
+        "采用": "全灌胶工艺和智能安全防护",
+        "充电功率": "灵活调配",
+        "最大支持": "24路输出",
+        "峰值效率大于": 96,
+        "效率": "大于96%"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "绿能慧充",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "绿能慧充推出的兆瓦级充电堆，采用全灌胶工艺和智能安全防护，充电功率灵活调配，最大支持24路输出，峰值效率大于96%"
+          ]
+        }
+      ],
+      "category": "ChargingTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "全主动悬架、超级四电机系统、48V线控制动和48V线控转向": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "全球": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "纯电动、插电式混合动力和燃料电池在内的新能源汽车累计销售1765.9万辆",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年全球包括纯电动、插电式混合动力和燃料电池在内的新能源汽车累计销售1765.9万辆，同比增长20.4%，新 能源汽车销量在整体汽车市场占比达到18.9%，较上年提升2.4个百分点（见表10）"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "全球首次将 2000MPa激光拼焊门环": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "用于",
+          "object": "量产车型",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "育材堂与岚图汽车联合发布的2000MPa激光拼焊门环，集成焊丝强韧化冶金、焊缝缺陷控制等技术，全球首次将 2000MPa激光拼焊门环应用于量产车型"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "全球首款OLED滑移曲面屏": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "关于加力": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "大规模设备更新和消费 品以旧换新的若干措施",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年7月24日，国家发展改革委、财政部印发《关于加力支持大规模设备更新和消费 品以旧换新的若干措施》（发改环资〔2024〕1104号），统筹安排3000亿元左右超长期特别国债资金，并提出落实措施"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "内外两层2000MPa超高强度钢材设计": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "准900V超快充固态电池": {
+      "type": "entity",
+      "attributes": {
+        "续航里程": [
+          "1000km+",
+          "1000km"
+        ]
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "智己",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "智己L6将搭载准900V超快充固态电池，实现1000km+续航里程和超快充电速度，同时保证电池的安全性"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "凯芯科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "KT5030A高精度定位芯片"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "刀片电池": {
+      "type": "entity",
+      "category": "BatteryTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "正极材料",
+          "object": "磷酸铁锂",
+          "sources": [
+            "比亚迪刀片电池资料"
+          ],
+          "evidence": [
+            "刀片电池采用磷酸铁锂体系"
+          ]
+        },
+        {
+          "relation": "研发企业",
+          "object": "比亚迪",
+          "sources": [
+            "比亚迪刀片电池资料"
+          ],
+          "evidence": [
+            "比亚迪发布刀片电池"
+          ]
+        }
+      ],
+      "sources": [
+        "比亚迪刀片电池资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "分布式电驱桥系统": {
+      "type": "entity",
+      "attributes": {
+        "采用": "800V高压动力系统",
+        "实现": "电机与驱动桥高度一体化集成",
+        "支持": "分时驱动策略和一体式取力器"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "速豹科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年9月3日，速豹科技发布的分布式电驱桥系统，采用800V高压动力系统，实现电机与驱动桥高度一体化集成，支持分时驱 动策略和一体式取力器"
+          ]
+        }
+      ],
+      "category": "DriveSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "前虚拟主销双横臂+后五连杆悬架系统": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "力度": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "力度的下滑": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "力度继续保持": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "加力": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "大规模设备更新和消费品以旧换新",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "统筹安排国债资金，加力支持大规模设备更新和消费品以旧换新"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "动力": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "燃油及电动",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "上汽MG在2016年就进入了澳大利亚市场，2024年在澳销量超5万 辆，产品品系覆盖SUV、轿车，动力包括燃油及电动"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "动力蓄电池": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "半固态工艺镁合金电驱壳体": {
+      "type": "entity",
+      "attributes": {
+        "采用": "AZ91D镁合金",
+        "总重量": "13.7kg",
+        "较铝合金减重": 30,
+        "减重比例": "30%"
+      },
+      "relations": [
+        {
+          "relation": "应用于",
+          "object": [
+            "智己L7电驱系统",
+            "第二代镁合金电驱总成"
+          ]
+        }
+      ],
+      "category": "MaterialProcess",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "半固态注射成型技术": {
+      "type": "entity",
+      "attributes": {
+        "能耗降低": 40
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "华为": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "乾崑智驾ADS 3.0"
+        },
+        {
+          "relation": "通过测试",
+          "object": "零部件供应、HI模式、鸿蒙智行及HI Plus模式等灵活合作方式",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "例如，华为通过零部件供应、HI模式、鸿蒙智行及HI Plus模式等灵活合作方式，不仅助力车企向智能化转 型，也为自身构建“汽车界博世”的产业地位奠定基础"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "华为ADS": {
+      "type": "entity",
+      "category": "ADASSystem",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含能力",
+          "object": [
+            "城区领航辅助",
+            "高速领航辅助",
+            "泊车辅助"
+          ],
+          "sources": [
+            "华为智能汽车解决方案资料"
+          ],
+          "evidence": [
+            "ADS覆盖领航辅助和泊车辅助场景"
+          ]
+        }
+      ],
+      "sources": [
+        "华为智能汽车解决方案资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "华为MDC": {
+      "type": "entity",
+      "category": "ComputingPlatform",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "华为",
+          "sources": [
+            "华为MDC白皮书"
+          ],
+          "evidence": [
+            "华为推出MDC平台"
+          ]
+        }
+      ],
+      "sources": [
+        "华为MDC白皮书",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "华为问界": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "新M7 Ultra"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "华为鸿蒙智行系统的系列新品牌车型销量表现突出": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "单枪最大": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "600kW恒功率输出",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "优优绿能的720kW独立风道超充系统，采用全新独立风道技术，单枪最大支持600kW恒功率输出，整机噪声小于 65dB，主机能量转换效率95%以上"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "双侧64km": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "可广泛": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "用于",
+          "object": "自动驾驶",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该芯片具备厘米级定位精度、通过AEC-Q100 Grade2车规安全认证等特点，可广泛应用于自动驾驶、智能机器人和无人机等领域"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "各类大功 率充电场景": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "吉利": {
+      "type": "entity",
+      "attributes": {
+        "销量": 261.7,
+        "同比增长": 23.8,
+        "排名": "前五"
+      },
+      "relations": [
+        {
+          "relation": "发布",
+          "object": [
+            "GEA智能新能源架构",
+            "神盾短刀磷酸铁锂电池"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "商汤绝影": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "商用车市场": {
+      "type": "entity",
+      "attributes": {
+        "迎来": "新机遇"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "国轩高科": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "LMFP体系L600启晨电池"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "在中央和国家机关推广": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "新能源汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "发挥中央和国家机关示范引领作用，在中央和国家机关推广使用新能源汽车"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "地埋式全液冷充电系统": {
+      "type": "entity",
+      "attributes": {
+        "采用": "刀片式液冷超充模块设计",
+        "支持最高": "1000V/600A的大功率输出",
+        "散热方式": "利用地冷散热"
+      },
+      "relations": [],
+      "category": "ChargingTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "地埋式设计": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "地平线": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "城区领航辅助": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "城市NOA": {
+      "type": "entity",
+      "category": "ADASFunction",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": [
+            "百度Apollo",
+            "比亚迪",
+            "长城"
+          ],
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "百度Apollo于2024年4月23日发布的纯视觉城市领航辅助驾驶产品ANP3 Pro，采用单Orin芯片和11个摄 像头等传感器配置，实现高速和城市NOA功能",
+            "至2024年底，比亚迪和长城宣布已进入全国范围内的城市NOA推 广阶段"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "域控芯片": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "为旌科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "3.智能驾驶芯片 为旌科技发布域控芯片"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "增程式平台技术": {
+      "type": "entity",
+      "category": "VehiclePlatform",
+      "attributes": {
+        "续航里程": "1000km"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "深蓝汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "深蓝汽车发布全新硬派SUV G318，搭载增程式平台技术，综合续驶里程达1000km，电驱动系统工况效率高达92.59%"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "墨西哥": {
+      "type": "entity",
+      "attributes": {
+        "新能源汽车出口量同比增长": 3.7
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "复杂路况": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "性强、视野好、空间大的SUV车 型占据了进口车的半壁江山",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "复杂路况通过性强、视野好、空间大的SUV车 型占据了进口车的半壁江山，也是目前乘用车销量增长的主力"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "多屏交互": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "多种方式布局": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "大幅提升 报废税及融资利率等方式": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "大规模设备更新和消费 品以旧换新的若干措施": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "大规模设备更新和消费品以旧换新": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "天工08底盘": {
+      "type": "entity",
+      "attributes": {
+        "采用": "前虚拟主销双横臂+后五连杆悬架系统",
+        "配备": "自主空气悬架系统和后轮转向系统"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "一汽",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "一汽红旗天工08底盘采用前虚拟主销双横臂+后五连杆悬架系统，配备自主空气悬架系统和后轮转向系统，提供稳定的底盘性能和 灵活的低速转弯能力"
+          ]
+        }
+      ],
+      "category": "ChassisTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "奇瑞": {
+      "type": "entity",
+      "attributes": {
+        "销量": 261.7,
+        "同比增长": 38.6,
+        "排名": "第六",
+        "市占率提升": 2.1,
+        "出口量": 114.4,
+        "出口量同比增长": 23.7
+      },
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "高阶智能驾驶技术方案C-Pilot 5.0"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "威睿": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "展示",
+          "object": "800V SiC四电机分布式驱动系统"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "宁德时代": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": [
+            "骁遥超级增混电池",
+            "磐石底盘"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "宁德时代磐石底盘": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "高安全性机械架构设计",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "宁德时代磐石底盘采用高安全性机械架构设计，实现软硬件解耦，支持L3至L4智能驾驶，提供高适配接口，可灵活选配，缩短研发 周期"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "安徽宝镁": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "镁合金CCB及电驱壳体技术"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "安波福": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "更新",
+          "object": "第六代ADAS平台"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "宸芯科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "新一代车规级C-V2X芯片平台CX1920"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "对象": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "小米": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "金沙江电池"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "小米以及": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "华为鸿蒙智行系统的系列新品牌车型销量表现突出",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "理想、零跑、小米以及搭载华为鸿蒙智行系统的系列新品牌车型销量表现突出，正逐步逼近并赶超部分传统豪华 品牌，重塑车市竞争版图"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "小米发布的金沙江电池": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "硅碳负极技术",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年2月22日，小米发布的金沙江电池采用新一代硅碳负极技术，能量密度达779Wh/L，体积缩小8%，电量提升至5300mAh，续航 提升17%"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "小米汽车": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "智能底盘预研技术"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "小米汽车发布的智能底盘预研技术": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "全主动悬架、超级四电机系统、48V线控制动和48V线控转向",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "小米汽车发布的智能底盘预研技术包括全主动悬架、超级四电机系统、48V线控制动和48V线控转向，实现对汽车横、纵、垂三 向六自由度的精准调控"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "小鹏等车企也": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "自建或合作的方式",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "印度尼西亚是东盟第一大汽车市场，上汽通用五菱、塞力斯等中国车企已在印度尼西亚实现本地化 生产，广汽、比亚迪、小鹏等车企也通过自建或合作的方式，正在推进印度尼西亚工厂的建设"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "岚图": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "新一代全栈自研智能座舱"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "岚图汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "峰值": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "峰值功率": "150～250kW",
+        "效率": "96%"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "工艺": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "高集成设计实现轻量化效果15",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该工艺通过高集成设计实现轻量化效果15%，整体扭转刚度提升5%，碰撞性能满足2024版CNCAP五星标准"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "巴西": {
+      "type": "entity",
+      "attributes": {
+        "新能源汽车出口量同比增长": 1.2
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "年限进一步向3": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "广汽埃安": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "非晶碳纤维电机"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "广汽埃安非晶碳纤维电机": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "非晶合金定子和碳纤维转子",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "广汽埃安非晶碳纤维电机采用非晶合金定子和碳纤维转子，提升电机效率和功率密度，降低损耗和噪声，实现一级能效认 证"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "广汽集团": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "无图纯视觉智驾方案GARCIA OS"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "应用": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "座舱": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "全球首款OLED滑移曲面屏",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "岚图汽车2024年5月官宣了新一代全栈自研智能座舱，该座舱搭载全球首款OLED滑移曲面屏、超视超清超沉浸的AR-HUD、 AI语音交互大模型、多形态人机交互等先进技术"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "征程5": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {
+        "算力": "128TOPS"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "地平线",
+          "sources": [
+            "地平线征程5资料"
+          ],
+          "evidence": [
+            "地平线发布征程5"
+          ]
+        }
+      ],
+      "sources": [
+        "地平线征程5资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "御行系列域控芯片": {
+      "type": "entity",
+      "attributes": {
+        "型号": "VS919、VS919L"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "为旌科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "为旌科技发布了御行系列域控芯片"
+          ]
+        }
+      ],
+      "category": "Chip",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "性强、视野好、空间大的SUV车 型占据了进口车的半壁江山": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "成功": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "双侧64km",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该技术通过内外两层2000MPa超高强度钢材设计，显著增强车辆吸能能力，成功通过双侧64km/h小偏置碰撞及车顶静 压测试，吸能能力提升27%，推动轻量化与安全性协同升级，树立行业新标杆"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "技术": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "纳米 尺度固态电解质包覆超高镍正极材料和新一代高比能复合硅碳负极",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该技术采用纳米 尺度固态电解质包覆超高镍正极材料和新一代高比能复合硅碳负极"
+          ]
+        },
+        {
+          "relation": "通过测试",
+          "object": "内外两层2000MPa超高强度钢材设计",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该技术通过内外两层2000MPa超高强度钢材设计，显著增强车辆吸能能力，成功通过双侧64km/h小偏置碰撞及车顶静 压测试，吸能能力提升27%，推动轻量化与安全性协同升级，树立行业新标杆"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "技术还": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "高安全设计的动力电池、高效发动机和多项智能化功能",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该 技术还包括高安全设计的动力电池、高效发动机和多项智能化功能"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "报废国三及以下排放标准营运类柴油货车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "持续的降本提质": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "提出加大设备更新": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "力度",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "提出加大设备更新支持力度，提高 新能源公交车及动力电池更新补贴标准，提高汽车报废更新补贴标准等措施"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "插混汽车": {
+      "type": "entity",
+      "attributes": {
+        "销量": 514.1,
+        "同比增长": 83.4,
+        "行业占比": "40.0%",
+        "占比提升": 10.4,
+        "市场增量贡献度": 69.3
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "摄像头": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "政策": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": [
+            "报废国三及以下排放标准营运类柴油货车",
+            "智能网联汽车"
+          ],
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该政策支持报废国三及以下排放标准营运类柴油货车，实施差别化补贴标 准",
+            "政策支持智能网联汽车、充电设施、数据跨境、网络平台责任等新兴领域完善标准规范，强化网络安全保险、数据分类保护等风险防 控机制，同时推动城市基础设施智能化改造与数据要素价值释放，通过打造韧性城市、培育数据产业新业态为汽车行业发展奠定牢固基础"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "政策补贴的减 少迫使汽车制造商": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "降价来换取销量",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "政策补贴的减 少迫使汽车制造商通过降价来换取销量，最终导致全行业陷入价格战，加速了市场的重新洗牌——领先车企借此机会扩大市场份额，而弱势品牌则面临严峻 的生存挑战"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "整机": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "噪声": "65dB"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "整车出口企业TOP10": {
+      "type": "entity",
+      "attributes": {
+        "出口量": 505.6,
+        "出口量占出口总量比重": 86.3,
+        "出口量同比增长": 17.8
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新M7 Ultra": {
+      "type": "entity",
+      "attributes": {
+        "采用": "192线激光雷达"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新一代中央处理器和区域控制器车规芯片": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年4月25日"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新一代全栈自研智能座舱": {
+      "type": "entity",
+      "attributes": {
+        "搭载": "全球首款OLED滑移曲面屏、超视超清超沉浸的AR-HUD、AI语音交互大模型、多形态人机交互等先进技术"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新一代车规级C-V2X芯片平台CX1920": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "WICV2024会议期间",
+        "特点": "支持软硬解耦"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新兴市场新能源汽车政策": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "力度继续保持",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "近年来，新兴市场新能源汽车政策支持力度继续保持，推动全球新能源汽车产业快速发展，特别是在中国新能源汽 车发展的强力带动下，产销规模快速上升"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "新能源A级乘用车有望": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "硬件与软件协 同创新",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2025年，新能源A级乘用车有望通过硬件与软件协 同创新，将百公里行驶电耗降至10kWh以下"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "新能源商用车": {
+      "type": "entity",
+      "attributes": {
+        "优势": "运营成本低"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "新能源汽车": {
+      "type": "entity",
+      "attributes": {
+        "改进": "智能配置",
+        "渗透率": "8.8%"
+      },
+      "relations": [],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "方案车端": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "算力": "1000TOPS"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "无图纯视觉智驾方案": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "广汽集团",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "广汽集团发布无图纯视觉智驾方案"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "星火大模型V4.0": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "科大讯飞",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "科大讯飞发布星火大模型V4.0"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "星驱科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "P1电机"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "星驱科技发布的P1电机": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "高转矩密度拓扑设计和高效散热方案",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "星驱科技发布的P1电机采用高转矩密度拓扑设计和高效散热方案，提升电机功率密度和效率，降低噪声，适用于多种工作模式"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智己": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智己L6": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "搭载",
+          "object": "准900V超快充固态电池"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "智己L6将": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "准900V超快充固态电池",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "智己L6将搭载准900V超快充固态电池，实现1000km+续航里程和超快充电速度，同时保证电池的安全性"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能化功能": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能化技术的下沉": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能底盘预研技术": {
+      "type": "entity",
+      "attributes": {
+        "包括": "全主动悬架、超级四电机系统、48V线控制动和48V线控转向",
+        "实现": "对汽车横、纵、垂三向六自由度的精准调控"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "小米",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "小米汽车发布的智能底盘预研技术包括全主动悬架、超级四电机系统、48V线控制动和48V线控转向，实现对汽车横、纵、垂三 向六自由度的精准调控"
+          ]
+        }
+      ],
+      "category": "ChassisTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能座舱": {
+      "type": "entity",
+      "category": "SmartCockpit",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "岚图汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "岚图汽车2024年5月官宣了新一代全栈自研智能座舱，该座舱搭载全球首款OLED滑移曲面屏、超视超清超沉浸的AR-HUD、 AI语音交互大模型、多形态人机交互等先进技术"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能电池": {
+      "type": "entity",
+      "category": "BatteryTechnology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "智能网联汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "更折射出": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "标准引领、机制创新推动汽车产业绿色转型与交通运输体系现代化建设的深层意图",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "这不仅体现了对消费者权益与公共安全的高度重 视，更折射出通过标准引领、机制创新推动汽车产业绿色转型与交通运输体系现代化建设的深层意图，为构建安全、高效、低碳的现代交通产业生态提供了 制度支撑"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "最大": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "24路输出",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "绿能慧充推出的兆瓦级充电堆，采用全灌胶工艺和智能安全防护，充电功率灵活调配，最大支持24路输出，峰值效率大于96%"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "机舱压铸66合1一体化工艺": {
+      "type": "entity",
+      "attributes": {
+        "轻量化效果": 15,
+        "扭转刚度提升": 5,
+        "碰撞标准": "2024版CNCAP五星",
+        "成本降低": 50,
+        "行业第一": "集成化程度最高、重量最轻、开发周期最短"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "极狐": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "达尔文2.0技术体系"
+        },
+        {
+          "relation": "打造了",
+          "object": "百模汇创平台"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "极狐汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "架构": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "X9CC芯片作为中央计算平台",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该架构采用X9CC芯片作为中央计算平台，支持多个系统，同时推出多款区域控制器芯片满足不同车型需求"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "标准引领、机制创新推动汽车产业绿色转型与交通运输体系现代化建设的深层意图": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "欣旺达": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "闪充电池3.0"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "欧曼银河9重卡平台": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "油气氢电混合技术路线"
+        },
+        {
+          "relation": "研发企业",
+          "object": "福田汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "福田汽车发布了欧曼银河9重卡平台，采用油气氢电混合技术路线，创新三段式集成技术，实现高效轻量化电驱桥、碳化硅控制模 块等软硬件高度集成"
+          ]
+        }
+      ],
+      "category": "VehiclePlatform",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "欧洲经销 商网络将零跑海外销售网点拓展至200家": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "比亚迪": {
+      "type": "entity",
+      "attributes": {
+        "全球销量": 452,
+        "排名": "第六",
+        "排名提升位次": 2,
+        "销量增加": 150,
+        "全球市场份额": 4.9,
+        "全球市场份额提升": 1.5,
+        "增长显著市场": "意大利、英国、新加坡",
+        "同比增长": 41.3,
+        "市占率提升": 3.5,
+        "出口量同比增长": 71.8
+      },
+      "relations": [
+        {
+          "relation": "进入",
+          "object": "全球前十大汽车集团"
+        },
+        {
+          "relation": "超越",
+          "object": "上汽"
+        },
+        {
+          "relation": "依托",
+          "object": "丰富的产品",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "TOP10中，比亚迪依托丰富的产品，2024年新能源汽车销量飙升至427.0万辆，同 比劲增41.3%，市场份额达到33.2%"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "毫米波雷达": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "汇川联合动力": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "PD4H混碳电控"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "泊车辅助": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "法国为代表的欧盟成员国新能源政策": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "力度的下滑",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "当前，欧洲本地电动汽车产业链正在建设中，2024年以德国、法国为代表的欧盟成员国新能源政策支持力度的下滑， 加上对华电动汽车征收反补贴关税措施对进口电动车的阻碍，德国全年销售新能源汽车57.2万辆，同比降低18.2%，渗透率由2023年22.2%降低至13.8%"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "泛亚自研的算法模型和高精地图": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "流量打开销量突破口": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "深入调研与分析": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "深蓝": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "深蓝硬派SUV G318"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "深蓝汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "深蓝硬派SUV G318": {
+      "type": "entity",
+      "attributes": {
+        "综合续驶里程": 1000,
+        "电驱动系统工况效率": 92.59
+      },
+      "relations": [
+        {
+          "relation": "搭载",
+          "object": "增程式平台技术"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "热销 车型": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "包含",
+          "object": "熊猫mini、极氪001、极氪007、XC60、XC90、银河L7、极星2等",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "吉利控股过去五年新能源汽车销量持续上升，2024年销售首次超过100万辆，达到136.6万辆，同比增长59.2%，排名超越大众集团跃居全球第三，其热销 车型包括熊猫mini、极氪001、极氪007、XC60、XC90、银河L7、极星2等"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "熊猫mini、极氪001、极氪007、XC60、XC90、银河L7、极星2等": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "燃料电池汽车": {
+      "type": "entity",
+      "attributes": {
+        "销量": 5106
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "燃油及电动": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "版本": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "不同的SoC和架构配置",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "这些版本支持不同的SoC和架构配置、软件和硬件更新，以及符合开放容器倡议标准的容器"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "特斯拉": {
+      "type": "entity",
+      "attributes": {
+        "出口量同比增长": -24.6
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "猛龙、坦克、蓝山等SUV车型": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "理想汽车": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "OTA 5.0"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "电驱动系统": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "效率": "92.59%"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "电驱壳体": {
+      "type": "entity",
+      "attributes": {
+        "重量": "2.8kg",
+        "减重比例": "超1/3"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "百度": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "纯视觉城市领航辅助驾驶产品ANP3 Pro"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "百度Apollo": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "百模汇创平台": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "极狐汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "同时，极狐汽车打造了百模汇创平台，可无缝接入并管理各行业大模型，为用户提供海量服务"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "真·端到端自动驾驶解决方案UniAD并展示道路测试表现": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "商汤绝影",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "商汤绝影发布面向量产的真·端到端自动驾驶解决方案UniAD并展示道路测试表现，元戎启行、零一汽车也推出或推动基于端到端+大模型的量产解决 方案"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "硅碳负极技术": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "硬件与软件协 同创新": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "磐石底盘": {
+      "type": "entity",
+      "attributes": {
+        "采用": "高安全性机械架构设计",
+        "实现": "软硬件解耦",
+        "支持": "L3至L4智能驾驶",
+        "提供": "高适配接口"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "宁德时代",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "宁德时代磐石底盘采用高安全性机械架构设计，实现软硬件解耦，支持L3至L4智能驾驶，提供高适配接口，可灵活选配，缩短研发 周期"
+          ]
+        }
+      ],
+      "category": "ChassisTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "磷酸铁锂": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "神盾短刀”磷酸铁锂电池": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "吉利",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "吉利发布的“神盾短刀”磷酸铁锂电池，具有超安全、超耐用、超快充等性能，能量密度达到192Wh/kg，循环寿命超 过3500次"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "神盾短刀磷酸铁锂电池": {
+      "type": "entity",
+      "attributes": {
+        "能量密度": [
+          192,
+          "192Wh/kg"
+        ],
+        "循环寿命": "3500次"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "吉利",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "吉利发布的“神盾短刀”磷酸铁锂电池，具有超安全、超耐用、超快充等性能，能量密度达到192Wh/kg，循环寿命超 过3500次"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "福田": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "欧曼银河9重卡平台"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "福田汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "禾赛AT128": {
+      "type": "entity",
+      "category": "Sensor",
+      "attributes": {
+        "线数": "128线"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "禾赛科技",
+          "sources": [
+            "禾赛AT128资料"
+          ],
+          "evidence": [
+            "禾赛科技推出AT128"
+          ]
+        }
+      ],
+      "sources": [
+        "禾赛AT128资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "禾赛科技": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "科大讯飞": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "讯飞星火大模型V4.0"
+        },
+        {
+          "relation": "合作",
+          "object": "华为"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "科大讯飞与华为": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "打造",
+          "object": "飞星一号"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "端到端自动驾驶": {
+      "type": "entity",
+      "category": "AlgorithmTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": [
+            "华为",
+            "商汤绝影",
+            "元戎启行",
+            "零一汽车",
+            "一汽"
+          ],
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "华为推出面向量产的端到端自动驾驶解决方案",
+            "商汤绝影发布面向量产的真·端到端自动驾驶解决方案UniAD并展示道路测试表现，元戎启行、零一汽车也推出或推动基于端到端+大模型的量产解决 方案"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "端到端自动驾驶解决方案": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "华为",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "华为推出面向量产的端到端自动驾驶解决方案"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "第二代增程技术": {
+      "type": "entity",
+      "attributes": {
+        "采用": "24极72槽定转子设计和扁线油冷电机技术",
+        "实现": "高功率密度、高可靠性和高NVH品质"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "上海电驱动",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "上海电驱动即将推出的第二代增程技术，采用24极72槽定转子设计和扁线油冷电机技术，实现高功率密度、高可靠性和高 NVH品质"
+          ]
+        }
+      ],
+      "category": "DriveSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "第六代ADAS平台": {
+      "type": "entity",
+      "attributes": {
+        "更新时间": "2024年9月",
+        "版本": "Core、Plus、Pro、Ultra"
+      },
+      "relations": [],
+      "category": "ADASSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "管理办法": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "适用场景",
+          "object": "道路机动车辆生产企业及产品准入的检验",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该管理办法适用于道路机动车辆生产企业及产品准入的检验，对申请条件、申请材料清单、检验与变更、监督管理、处罚措施等方面进行了明确"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "管理办法适": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "用于",
+          "object": "道路机动车辆生产企业及产品准入的检验",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该管理办法适用于道路机动车辆生产企业及产品准入的检验，对申请条件、申请材料清单、检验与变更、监督管理、处罚措施等方面进行了明确"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "系统": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "地埋式设计",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "该系统采用地埋式设计，充电桩体埋于地下，仅充电枪露出地面，支持最高1000V/600A的大功率输出"
+          ]
+        },
+        {
+          "relation": "依托",
+          "object": "泛亚自研的算法模型和高精地图",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "上汽通用在2024年7月15日正式推出NOP智慧领航辅助驾驶系统，该系统依托泛亚自研的算法模型和高精地图， 可实现覆盖高速、高架、城市快速路等路况的L2+级高阶辅助驾驶能力"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "纯电": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "续航里程": "400km"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "纯电动、插电式混合动力和燃料电池在内的新能源汽车累计销售1765.9万辆": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "纯电动汽车": {
+      "type": "entity",
+      "attributes": {
+        "销量": 771.9,
+        "同比增长": 15.5,
+        "行业占比": 60.4,
+        "占比下降": 10.4,
+        "市场增量贡献度": 31
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "纯视觉城市领航辅助驾驶产品ANP3 Pro": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年4月23日",
+        "芯片": "单Orin芯片",
+        "传感器配置": "11个摄像头",
+        "功能": "高速和城市NOA"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "纳米 尺度固态电解质包覆超高镍正极材料和新一代高比能复合硅碳负极": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "绿能慧充": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "兆瓦级充电堆"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "老旧货车等交通运输装备成为政策重点": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "对象",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "乘用 车、新能源公交车、老旧货车等交通运输装备成为政策重点支持对象"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "而合资品牌则": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "降价和混动技术维持竞争力",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "自主品牌凭 借电动化和智能化优势继续扩大市场份额，而合资品牌则通过降价和混动技术维持竞争力"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "而是被": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "用于",
+          "object": "追求短期利益的网约车业务",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "然而，这些 荣誉带来的资金并未被有效投入产品研发和品牌建设上，而是被用于追求短期利益的网约车业务"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "联发科": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "Dimensity Auto座舱平台系统单芯片SoC"
+        },
+        {
+          "relation": "合作",
+          "object": "英伟达"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "育材堂": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "联合发布",
+          "object": "2000MPa激光拼焊门环技术"
+        },
+        {
+          "relation": "合作",
+          "object": "岚图"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "能够": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "车内运行大语言模型和多显示器",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "这一平台结合了高性能计算技术和先进的图形处理技术，能够支持车内运行大语言模型和多显示器、多摄像头等 高级功能"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "腾势Z9GT": {
+      "type": "entity",
+      "attributes": {
+        "采用": "三电机独立驱动、后轮双电机独立转向等技术",
+        "具备": "圆规掉头、易三方泊车等功能"
+      },
+      "relations": [
+        {
+          "relation": "搭载",
+          "object": "BYD9000定制芯片"
+        },
+        {
+          "relation": "采用",
+          "object": "三电机独立驱动",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "腾势Z9GT采用三电机独立驱动、后轮双电机独立转向等技术，具备圆规掉头、易三方泊车等功能，搭载BYD9000定制芯片，提升智 舱体验"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "自动驾驶": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "自动驾驶运行安全风险管控系统": {
+      "type": "entity",
+      "category": "SafetySystem",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "自建或合作的方式": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "芯驰科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": [
+            "新一代中央处理器和区域控制器车规芯片",
+            "“1+N”中央计算+区域控制架构"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "英飞源": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "地埋式全液冷充电系统解决方案"
+        }
+      ],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "蔚来": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "全域领航辅助NOP+"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "蔚来ET9": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "中央计算平台、区域控制器、高速冗余通信网络、48V双冗余低压电源和整车全域操作系统"
+        },
+        {
+          "relation": "支持",
+          "object": "高级别自动驾驶"
+        },
+        {
+          "relation": "采用",
+          "object": "中央计算平台",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "蔚来ET9采用中央计算平台、区域控制器、高速冗余通信网络、48V双冗余低压电源和整车全域操作系统等先进技术，全面升级电子电 气架构，支持高级别自动驾驶"
+          ]
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "蔚来ET9数字架构": {
+      "type": "entity",
+      "category": "EEArchitecture",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "蜂巢能源": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "推出",
+          "object": "59度大电量增混电池"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "计划": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "欧洲经销 商网络将零跑海外销售网点拓展至200家",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "Stellantis集团于2023年10月投资约15亿欧元获得零跑汽车约21%股权，2024年5月合资公司成立后，依托Stellantis的全球资源，计划通过其欧洲经销 商网络将零跑海外销售网点拓展至200家，实现了中国车企技术反向输出至欧洲市场，有效提升了零跑品牌的国际影响力"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "讯飞星火大模型V4.0": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年6月27日",
+        "核心能力提升": "文本生成、语言理解、知识问答等七大核心能力"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "科大讯飞",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年6月27日，科大讯飞发布的讯飞星火大模型V4.0，在文本生成、语言理解、知识问答等七大核心能力方面实现了全 面提升"
+          ]
+        }
+      ],
+      "category": "AlgorithmTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "试图": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "流量打开销量突破口",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "广汽集团董事长曾庆洪提出“卷老板、卷流量”的转型思路，奇瑞控股集团董事长尹同跃直言“向余承东学习、向雷军 学习”，比亚迪总经理们集体入驻抖音平台，广汽系高管开设个人视频号出道，蔚来汽车董事长李斌一度直播了10个小时，“技术派掌门人”魏建军在直播 间开股东大会、测试新车等，试图通过流量打开销量突破口"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "赛恩领动": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "S系列高性能成像雷达SIR-4K"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "赣锋锂电": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "软包CTP一体化电池"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "超快充": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "超高压双电机电驱系统": {
+      "type": "entity",
+      "attributes": {
+        "采用": "扭矩矢量控制和超紧凑设计",
+        "实现": "高功率密度和超高工作结温"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "马瑞利",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2024年5月，马瑞利发布的超高压双电机电驱系统，采用扭矩矢量控制和超紧凑设计，实现了高功率密度和超高工作结 温"
+          ]
+        }
+      ],
+      "category": "DriveSystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "车云通信": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车人通信": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车内运行大语言模型和多显示器": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车机计算": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车规级全频高精度GNSS RF-SoC芯片KT5030A": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "凯芯科技",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "凯芯科技发布了车规级全频高精度GNSS RF-SoC芯片KT5030A"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车路云一体化": {
+      "type": "entity",
+      "category": "V2XTechnology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车路协同": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车路通信": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车车通信": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "车载智能计算平台将": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "持续的降本提质",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2025年，车载智能计算平台将通过持续的降本提质，实现性能的大幅升级，其成本将进一步降低"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "转弯以及": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "交通信号灯等操作",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "城市NOA针对城市环境下的智能辅助驾驶，车辆能够自主完成城市道路行驶，包括跟随前车、变换车道、超车、转弯以及通过交通信号灯等操作，最终安 全抵达目的地"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "软包CTP一体化电池": {
+      "type": "entity",
+      "attributes": {
+        "充电倍率": "10C"
+      },
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "超10C高倍率放电"
+        },
+        {
+          "relation": "研发企业",
+          "object": "赣锋锂电",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "赣锋锂电发布软包CTP一体化电池，融合六大技术创新，提升能量密度、安全性、集成效率和温控性能，支持超10C高倍率 放电"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "软硬解耦": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "较铝合金": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {
+        "减重比例": "30%"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "达尔文2.0技术体系": {
+      "type": "entity",
+      "attributes": {
+        "构建了": "七大技术板块"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "极狐汽车",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "极狐汽车发布达尔文2.0技术体系"
+          ]
+        }
+      ],
+      "category": "TechnologySystem",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "追求短期利益的网约车业务": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "速腾聚创": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "940nm超长距激光雷达M3"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "速腾聚创M1": {
+      "type": "entity",
+      "category": "Sensor",
+      "attributes": {
+        "技术路线": "MEMS"
+      },
+      "relations": [],
+      "sources": [
+        "速腾聚创M1资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "速豹科技": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "分布式电驱桥系统"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "道路机动车辆生产企业及产品准入的检验": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "量产智驾大模型": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "Momenta",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "Momenta发布量产智驾大模型"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "量产车型": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "金沙江电池": {
+      "type": "entity",
+      "attributes": {
+        "能量密度": [
+          779,
+          "779Wh/L"
+        ],
+        "体积缩小": 8,
+        "电量": 5300,
+        "续航提升": 17,
+        "减重比例": "17%"
+      },
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "小米",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "小米发布金沙江电池"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "销量增长主要": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "依托",
+          "object": "猛龙、坦克、蓝山等SUV车型",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "长城整体依旧保持增长，轿车市场 有一定程度下滑，销量增长主要依托猛龙、坦克、蓝山等SUV车型"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "锂离子动力蓄电池包和系统": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "镁合金CCB": {
+      "type": "entity",
+      "attributes": {
+        "重量": "4.09kg",
+        "减重比例": [
+          "30%以上",
+          "30%"
+        ]
+      },
+      "relations": [],
+      "category": "MaterialProcess",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "镁合金电驱壳体": {
+      "type": "entity",
+      "category": "MaterialProcess",
+      "attributes": {
+        "减重比例": "30%"
+      },
+      "relations": [],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "长城": {
+      "type": "entity",
+      "attributes": {
+        "排名": "第五"
+      },
+      "relations": [],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "长城汽车等企业已经开始": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "通过测试",
+          "object": "多种方式布局",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "在巴西市场，奇瑞、比亚迪、长城汽车等企业已经开始通过多种方式布局"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "长安": {
+      "type": "entity",
+      "attributes": {
+        "出口量同比增长": 49.6
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "闪充电池3.0": {
+      "type": "entity",
+      "attributes": {
+        "采用": "先进的快充技术和高能量密度材料",
+        "充电峰值倍率达": "6C",
+        "10分钟充电至": "80%SOC",
+        "充电倍率": "6C"
+      },
+      "relations": [],
+      "category": "ChargingTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "阿联酋": {
+      "type": "entity",
+      "attributes": {
+        "新能源汽车出口量同比增长": 1.1
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "降价和混动技术维持竞争力": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "降价来换取销量": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "零一汽车": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "零部件供应、HI模式、鸿蒙智行及HI Plus模式等灵活合作方式": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "雷达": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "4D成像技术",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "赛恩领动于2024年1月发布了S系列高性能成像雷达SIR-4K，该雷达采用4D成像技术，具有高精度、高分辨率、强抗干扰能力 和探测范围大等特点"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "雷达-相机融合": {
+      "type": "entity",
+      "category": "AlgorithmTechnology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "融合传感器",
+          "object": [
+            "毫米波雷达",
+            "摄像头"
+          ],
+          "sources": [
+            "Radar-Camera Fusion Review"
+          ],
+          "evidence": [
+            "融合毫米波雷达和摄像头用于感知"
+          ]
+        }
+      ],
+      "sources": [
+        "Radar-Camera Fusion Review",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "非晶合金定子和碳纤维转子": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "非晶碳纤维电机": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "非晶合金定子和碳纤维转子"
+        },
+        {
+          "relation": "实现",
+          "object": "一级能效认证"
+        },
+        {
+          "relation": "研发企业",
+          "object": "广汽埃安",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "广汽埃安非晶碳纤维电机采用非晶合金定子和碳纤维转子，提升电机效率和功率密度，降低损耗和噪声，实现一级能效认 证"
+          ]
+        }
+      ],
+      "category": "MotorTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "非车载充电机与电动汽车通信": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "飞星一号": {
+      "type": "entity",
+      "attributes": {
+        "类型": "万卡国产算力平台"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "马瑞利": {
+      "type": "entity",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "发布",
+          "object": "超高压双电机电驱系统"
+        }
+      ],
+      "category": "Technology",
+      "sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "骁遥”超级增混电池": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "宁德时代",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2.电池技术 宁德时代发布“骁遥”超级增混电池"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "骁遥超级增混电池": {
+      "type": "entity",
+      "attributes": {
+        "充电倍率": "4C",
+        "续航里程": "400km"
+      },
+      "relations": [
+        {
+          "relation": "支持",
+          "object": "4C超充"
+        },
+        {
+          "relation": "采用",
+          "object": "锂钠AB电池系统集成技术"
+        },
+        {
+          "relation": "研发企业",
+          "object": "宁德时代",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "2.电池技术 宁德时代发布“骁遥”超级增混电池"
+          ]
+        }
+      ],
+      "category": "BatteryTechnology",
+      "sources": [
+        "entity_centric.json",
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json",
+        "tech_entity_centric.json"
+      ]
+    },
+    "骁龙8295": {
+      "type": "entity",
+      "category": "Chip",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "支持",
+          "object": [
+            "车机计算",
+            "多屏交互",
+            "OTA升级",
+            "C-V2X"
+          ],
+          "sources": [
+            "高通骁龙座舱平台资料"
+          ],
+          "evidence": [
+            "8295用于智能座舱计算"
+          ]
+        }
+      ],
+      "sources": [
+        "高通骁龙座舱平台资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高安全性机械架构设计": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高安全设计的动力电池、高效发动机和多项智能化功能": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高转矩密度拓扑设计和高效散热方案": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高速领航辅助": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高阶智能驾驶技术方案C-Pilot 5.0": {
+      "type": "entity",
+      "attributes": {
+        "发布时间": "2024年10月18日",
+        "车端算力": 1000,
+        "功能": "车位到车位智驾"
+      },
+      "relations": [],
+      "category": "IndustryEntity",
+      "sources": [
+        "entity_centric.json"
+      ],
+      "graph_sources": [
+        "entity_centric.json"
+      ]
+    },
+    "高阶智能驾驶解决方案": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [
+        {
+          "relation": "研发企业",
+          "object": "奇瑞",
+          "sources": [
+            "2024年中国汽车工业发展报告_皮书数据库.pdf"
+          ],
+          "evidence": [
+            "奇瑞发布高阶智能驾驶解决方案"
+          ]
+        }
+      ],
+      "sources": [
+        "2024年中国汽车工业发展报告_皮书数据库.pdf",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "高集成设计实现轻量化效果15": {
+      "type": "entity",
+      "category": "Technology",
+      "attributes": {},
+      "relations": [],
+      "sources": [
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    },
+    "麒麟电池": {
+      "type": "entity",
+      "category": "BatteryTechnology",
+      "attributes": {
+        "系统能量密度": "最高255Wh/kg"
+      },
+      "relations": [
+        {
+          "relation": "采用",
+          "object": "CTP 3.0",
+          "sources": [
+            "宁德时代 CTP 3.0 麒麟电池资料"
+          ],
+          "evidence": [
+            "麒麟电池基于 CTP 3.0"
+          ]
+        },
+        {
+          "relation": "研发企业",
+          "object": "宁德时代",
+          "sources": [
+            "宁德时代 CTP 3.0 麒麟电池资料"
+          ],
+          "evidence": [
+            "宁德时代发布麒麟电池"
+          ]
+        }
+      ],
+      "sources": [
+        "宁德时代 CTP 3.0 麒麟电池资料",
+        "tech_entity_centric.json"
+      ],
+      "graph_sources": [
+        "tech_entity_centric.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "summary": {
+    "total_cases": 20,
+    "pass_count": 16,
+    "pass_rate": 0.8,
+    "weighted_score": 0.881,
+    "error_count": 0,
+    "avg_latency_ms": 2573,
+    "p50_latency_ms": 2067,
+    "max_latency_ms": 4156,
+    "by_category": {
+      "技术分类": {
+        "count": 4,
+        "pass": 4,
+        "avg_latency_ms": 2580,
+        "score": 0.986,
+        "pass_rate": 1.0
+      },
+      "统计": {
+        "count": 1,
+        "pass": 1,
+        "avg_latency_ms": 2057,
+        "score": 1.0,
+        "pass_rate": 1.0
+      },
+      "技术参数": {
+        "count": 4,
+        "pass": 3,
+        "avg_latency_ms": 4123,
+        "score": 0.8,
+        "pass_rate": 0.75
+      },
+      "企业技术": {
+        "count": 3,
+        "pass": 2,
+        "avg_latency_ms": 2051,
+        "score": 0.797,
+        "pass_rate": 0.667
+      },
+      "车型技术": {
+        "count": 2,
+        "pass": 2,
+        "avg_latency_ms": 2067,
+        "score": 1.0,
+        "pass_rate": 1.0
+      },
+      "车型筛选": {
+        "count": 1,
+        "pass": 0,
+        "avg_latency_ms": 2072,
+        "score": 0.675,
+        "pass_rate": 0.0
+      },
+      "供应链": {
+        "count": 1,
+        "pass": 1,
+        "avg_latency_ms": 2071,
+        "score": 1.0,
+        "pass_rate": 1.0
+      },
+      "车型详情": {
+        "count": 1,
+        "pass": 0,
+        "avg_latency_ms": 4071,
+        "score": 0.625,
+        "pass_rate": 0.0
+      },
+      "车型对比": {
+        "count": 1,
+        "pass": 1,
+        "avg_latency_ms": 4099,
+        "score": 0.95,
+        "pass_rate": 1.0
+      },
+      "日常对话": {
+        "count": 2,
+        "pass": 2,
+        "avg_latency_ms": 0,
+        "score": 1.0,
+        "pass_rate": 1.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "question": "有哪些ADAS系统？",
+      "category": "技术分类",
+      "expected_keywords": [
+        "ADS",
+        "C-Pilot",
+        "ADASSystem"
+      ],
+      "min_hits": 2,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "有哪些电池技术？",
+      "category": "技术分类",
+      "expected_keywords": [
+        "电池",
+        "BatteryTechnology"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "有哪些芯片技术？",
+      "category": "技术分类",
+      "expected_keywords": [
+        "Chip",
+        "芯片"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "有哪些传感器技术？",
+      "category": "技术分类",
+      "expected_keywords": [
+        "Sensor",
+        "雷达",
+        "传感器"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "统计技术分类",
+      "category": "统计",
+      "expected_keywords": [
+        "技术",
+        "ADAS",
+        "Battery",
+        "Technology"
+      ],
+      "min_hits": 2,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "C-Pilot 5.0的算力是多少？",
+      "category": "技术参数",
+      "expected_keywords": [
+        "C-Pilot 5.0",
+        "算力",
+        "1000"
+      ],
+      "min_hits": 2,
+      "weight": 1.4,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "M3激光雷达的测距能力是多少？",
+      "category": "技术参数",
+      "expected_keywords": [
+        "M3",
+        "测距",
+        "300m"
+      ],
+      "min_hits": 2,
+      "weight": 1.4,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "M3激光雷达的角分辨率是多少？",
+      "category": "技术参数",
+      "expected_keywords": [
+        "M3",
+        "角分辨率",
+        "0.05"
+      ],
+      "min_hits": 2,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "720kW独立风道超充系统参数是什么？",
+      "category": "技术参数",
+      "expected_keywords": [
+        "720kW",
+        "单枪",
+        "600kW",
+        "效率"
+      ],
+      "min_hits": 2,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "华为研发了哪些技术？",
+      "category": "企业技术",
+      "expected_keywords": [
+        "华为",
+        "ADS",
+        "技术"
+      ],
+      "min_hits": 2,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "奇瑞发布了哪些技术？",
+      "category": "企业技术",
+      "expected_keywords": [
+        "奇瑞",
+        "C-Pilot"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "速腾聚创发布了哪些技术？",
+      "category": "企业技术",
+      "expected_keywords": [
+        "速腾聚创",
+        "M3"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "哪些车用了Orin？",
+      "category": "车型技术",
+      "expected_keywords": [
+        "Orin",
+        "车型"
+      ],
+      "min_hits": 1,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "哪些车用了骁龙8295？",
+      "category": "车型技术",
+      "expected_keywords": [
+        "8295",
+        "车型"
+      ],
+      "min_hits": 1,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "有激光雷达的纯电SUV有哪些？",
+      "category": "车型筛选",
+      "expected_keywords": [
+        "激光雷达",
+        "BEV",
+        "SUV"
+      ],
+      "min_hits": 2,
+      "weight": 1.2,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "宁德时代供应哪些车？",
+      "category": "供应链",
+      "expected_keywords": [
+        "宁德时代",
+        "车型"
+      ],
+      "min_hits": 1,
+      "weight": 1.0,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "小米SU7参数",
+      "category": "车型详情",
+      "expected_keywords": [
+        "小米",
+        "SU7",
+        "价格",
+        "续航"
+      ],
+      "min_hits": 2,
+      "weight": 0.8,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "小米SU7和蔚来ES8对比",
+      "category": "车型对比",
+      "expected_keywords": [
+        "小米",
+        "蔚来",
+        "价格",
+        "续航"
+      ],
+      "min_hits": 2,
+      "weight": 0.8,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "你好",
+      "category": "日常对话",
+      "expected_keywords": [
+        "汽车技术",
+        "知识图谱"
+      ],
+      "min_hits": 1,
+      "weight": 0.5,
+      "forbidden_keywords": null
+    },
+    {
+      "question": "你能做什么？",
+      "category": "日常对话",
+      "expected_keywords": [
+        "ADAS",
+        "Orin",
+        "技术"
+      ],
+      "min_hits": 1,
+      "weight": 0.5,
+      "forbidden_keywords": null
+    }
+  ],
+  "results": [
+    {
+      "question": "有哪些ADAS系统？",
+      "category": "技术分类",
+      "answer": "图谱中共有 8 项ADASSystem 类技术，代表性条目如下：\n  - ADS 3.0：智能驾驶/ADAS系统\n  - ANP3 Pro：智能驾驶/ADAS系统\n  - C-Pilot 5.0：智能驾驶/ADAS系统\n  - GARCIA OS：智能驾驶/ADAS系统\n  - NOP+：智能驾驶/ADAS系统\n  - NOP智慧领航辅助驾驶系统：智能驾驶/ADAS系统\n  - 华为ADS：智能驾驶/ADAS系统\n  - 第六代ADAS平台：智能驾驶/ADAS系统",
+      "expected_keywords": [
+        "ADS",
+        "C-Pilot",
+        "ADASSystem"
+      ],
+      "keyword_hits": [
+        "ADS",
+        "C-Pilot",
+        "ADASSystem"
+      ],
+      "forbidden_hits": [],
+      "score": 0.95,
+      "passed": true,
+      "latency_ms": 4156,
+      "error": ""
+    },
+    {
+      "question": "有哪些电池技术？",
+      "category": "技术分类",
+      "answer": "图谱中共有 10 项BatteryTechnology 类技术，代表性条目如下：\n  - 59度大电量增混电池：电池技术\n  - L600启晨电池：电池技术\n  - 准900V超快充固态电池：电池技术\n  - 刀片电池：电池技术\n  - 智能电池：电池技术\n  - 神盾短刀磷酸铁锂电池：电池技术\n  - 软包CTP一体化电池：电池技术\n  - 金沙江电池：电池技术\n  - 骁遥超级增混电池：电池技术\n  - 麒麟电池：电池技术",
+      "expected_keywords": [
+        "电池",
+        "BatteryTechnology"
+      ],
+      "keyword_hits": [
+        "电池",
+        "BatteryTechnology"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2056,
+      "error": ""
+    },
+    {
+      "question": "有哪些芯片技术？",
+      "category": "技术分类",
+      "answer": "图谱中共有 8 项Chip 类技术，代表性条目如下：\n  - Dimensity Auto座舱平台系统单芯片SoC：车规芯片\n  - KT5030A：车规芯片\n  - NVIDIA DRIVE Orin：车规芯片\n  - VS919：车规芯片\n  - VS919L：车规芯片\n  - 征程5：车规芯片\n  - 御行系列域控芯片：车规芯片\n  - 骁龙8295：车规芯片",
+      "expected_keywords": [
+        "Chip",
+        "芯片"
+      ],
+      "keyword_hits": [
+        "Chip",
+        "芯片"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2053,
+      "error": ""
+    },
+    {
+      "question": "有哪些传感器技术？",
+      "category": "技术分类",
+      "answer": "图谱中共有 5 项Sensor 类技术，代表性条目如下：\n  - 192线激光雷达：传感器\n  - M3：传感器\n  - SIR-4K：传感器\n  - 禾赛AT128：传感器\n  - 速腾聚创M1：传感器",
+      "expected_keywords": [
+        "Sensor",
+        "雷达",
+        "传感器"
+      ],
+      "keyword_hits": [
+        "Sensor",
+        "雷达",
+        "传感器"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2055,
+      "error": ""
+    },
+    {
+      "question": "统计技术分类",
+      "category": "统计",
+      "answer": "技术图谱中的实体分类如下：\n  - 技术实体（Technology）: 247项\n  - 产业实体（IndustryEntity）: 52项\n  - 电池技术（BatteryTechnology）: 10项\n  - 智能驾驶/ADAS系统（ADASSystem）: 8项\n  - 车规芯片（Chip）: 8项\n  - 传感器（Sensor）: 5项\n  - 电驱系统（DriveSystem）: 5项\n  - 充电技术（ChargingTechnology）: 5项\n  - 材料与工艺（MaterialProcess）: 4项\n  - 算法技术（AlgorithmTechnology）: 4项\n  - 整车平台（VehiclePlatform）: 3项\n  - 底盘技术（ChassisTechnology）: 3项\n  - MotorTechnology（MotorTechnology）: 2项\n  - 电子电气架构（EEArchitecture）: 2项\n  - CommunicationTechnology（CommunicationTechnology）: 1项\n  - SafetySystem（SafetySystem）: 1项\n  - ComputingPlatform（ComputingPlatform）: 1项\n  - TechnologySystem（TechnologySystem）: 1项\n  - V2XTechnology（V2XTechnology）: 1项\n  - SmartCockpit（SmartCockpit）: 1项\n  - PowerElectronics（PowerElectronics）: 1项\n  - ADASFunction（ADASFunction）: 1项\n  - Standard（Standard）: 1项\n  - SoftwareTechnology（SoftwareTechnology）: 1项",
+      "expected_keywords": [
+        "技术",
+        "ADAS",
+        "Battery",
+        "Technology"
+      ],
+      "keyword_hits": [
+        "技术",
+        "ADAS",
+        "Battery",
+        "Technology"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2057,
+      "error": ""
+    },
+    {
+      "question": "C-Pilot 5.0的算力是多少？",
+      "category": "技术参数",
+      "answer": "C-Pilot 5.0 是一个智能驾驶/ADAS系统。\n它在图谱中记录的关键参数包括：算力为1000TOPS。\n相关关系如下：\n  - C-Pilot 5.0 的“研发企业”指向 奇瑞",
+      "expected_keywords": [
+        "C-Pilot 5.0",
+        "算力",
+        "1000"
+      ],
+      "keyword_hits": [
+        "C-Pilot 5.0",
+        "算力",
+        "1000"
+      ],
+      "forbidden_hits": [],
+      "score": 0.95,
+      "passed": true,
+      "latency_ms": 4128,
+      "error": ""
+    },
+    {
+      "question": "M3激光雷达的测距能力是多少？",
+      "category": "技术参数",
+      "answer": "M3 是一个传感器。\n它在图谱中记录的关键参数包括：测距能力为300m@10%；角分辨率为0.05°×0.05°。\n相关关系如下：\n  - M3 的“研发企业”指向 速腾聚创",
+      "expected_keywords": [
+        "M3",
+        "测距",
+        "300m"
+      ],
+      "keyword_hits": [
+        "M3",
+        "测距",
+        "300m"
+      ],
+      "forbidden_hits": [],
+      "score": 0.95,
+      "passed": true,
+      "latency_ms": 4131,
+      "error": ""
+    },
+    {
+      "question": "M3激光雷达的角分辨率是多少？",
+      "category": "技术参数",
+      "answer": "M3 是一个传感器。\n它在图谱中记录的关键参数包括：测距能力为300m@10%；角分辨率为0.05°×0.05°。\n相关关系如下：\n  - M3 的“研发企业”指向 速腾聚创",
+      "expected_keywords": [
+        "M3",
+        "角分辨率",
+        "0.05"
+      ],
+      "keyword_hits": [
+        "M3",
+        "角分辨率",
+        "0.05"
+      ],
+      "forbidden_hits": [],
+      "score": 0.95,
+      "passed": true,
+      "latency_ms": 4106,
+      "error": ""
+    },
+    {
+      "question": "720kW独立风道超充系统参数是什么？",
+      "category": "技术参数",
+      "answer": "系统 是一个技术实体。\n相关关系如下：\n  - 系统 的“采用”指向 地埋式设计\n  - 系统 的“依托”指向 泛亚自研的算法模型和高精地图",
+      "expected_keywords": [
+        "720kW",
+        "单枪",
+        "600kW",
+        "效率"
+      ],
+      "keyword_hits": [],
+      "forbidden_hits": [],
+      "score": 0.3,
+      "passed": false,
+      "latency_ms": 4129,
+      "error": ""
+    },
+    {
+      "question": "华为研发了哪些技术？",
+      "category": "企业技术",
+      "answer": "图谱中共有 80 项技术实体，代表性条目如下：\n  - 城市NOA：ADASFunction\n  - ADS 3.0：智能驾驶/ADAS系统\n  - ANP3 Pro：智能驾驶/ADAS系统\n  - C-Pilot 5.0：智能驾驶/ADAS系统\n  - GARCIA OS：智能驾驶/ADAS系统\n  - NOP+：智能驾驶/ADAS系统\n  - NOP智慧领航辅助驾驶系统：智能驾驶/ADAS系统\n  - 华为ADS：智能驾驶/ADAS系统\n  - 第六代ADAS平台：智能驾驶/ADAS系统\n  - AD 5.0智驾大模型：算法技术\n  - 端到端自动驾驶：算法技术\n  - 讯飞星火大模型V4.0：算法技术\n  - 雷达-相机融合：算法技术\n  - 59度大电量增混电池：电池技术\n  - L600启晨电池：电池技术\n  - 准900V超快充固态电池：电池技术\n  - 刀片电池：电池技术\n  - 智能电池：电池技术\n  - 神盾短刀磷酸铁锂电池：电池技术\n  - 软包CTP一体化电池：电池技术\n  - 金沙江电池：电池技术\n  - 骁遥超级增混电池：电池技术\n  - 麒麟电池：电池技术\n  - 720kW独立风道超充系统：充电技术\n  - 800V高压平台：充电技术\n  - 兆瓦级充电堆：充电技术\n  - 地埋式全液冷充电系统：充电技术\n  - 闪充电池3.0：充电技术\n  - 天工08底盘：底盘技术\n  - 智能底盘预研技术：底盘技术\n  - 磐石底盘：底盘技术\n  - Dimensity Auto座舱平台系统单芯片SoC：车规芯片\n  - KT5030A：车规芯片\n  - NVIDIA DRIVE Orin：车规芯片\n  - VS919：车规芯片\n  - VS919L：车规芯片\n  - 征程5：车规芯片\n  - 御行系列域控芯片：车规芯片\n  - 骁龙8295：车规芯片\n  - C-V2X：CommunicationTechnology",
+      "expected_keywords": [
+        "华为",
+        "ADS",
+        "技术"
+      ],
+      "keyword_hits": [
+        "华为",
+        "ADS",
+        "技术"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2056,
+      "error": ""
+    },
+    {
+      "question": "奇瑞发布了哪些技术？",
+      "category": "企业技术",
+      "answer": "图谱中共有 80 项技术实体，代表性条目如下：\n  - 城市NOA：ADASFunction\n  - ADS 3.0：智能驾驶/ADAS系统\n  - ANP3 Pro：智能驾驶/ADAS系统\n  - C-Pilot 5.0：智能驾驶/ADAS系统\n  - GARCIA OS：智能驾驶/ADAS系统\n  - NOP+：智能驾驶/ADAS系统\n  - NOP智慧领航辅助驾驶系统：智能驾驶/ADAS系统\n  - 华为ADS：智能驾驶/ADAS系统\n  - 第六代ADAS平台：智能驾驶/ADAS系统\n  - AD 5.0智驾大模型：算法技术\n  - 端到端自动驾驶：算法技术\n  - 讯飞星火大模型V4.0：算法技术\n  - 雷达-相机融合：算法技术\n  - 59度大电量增混电池：电池技术\n  - L600启晨电池：电池技术\n  - 准900V超快充固态电池：电池技术\n  - 刀片电池：电池技术\n  - 智能电池：电池技术\n  - 神盾短刀磷酸铁锂电池：电池技术\n  - 软包CTP一体化电池：电池技术\n  - 金沙江电池：电池技术\n  - 骁遥超级增混电池：电池技术\n  - 麒麟电池：电池技术\n  - 720kW独立风道超充系统：充电技术\n  - 800V高压平台：充电技术\n  - 兆瓦级充电堆：充电技术\n  - 地埋式全液冷充电系统：充电技术\n  - 闪充电池3.0：充电技术\n  - 天工08底盘：底盘技术\n  - 智能底盘预研技术：底盘技术\n  - 磐石底盘：底盘技术\n  - Dimensity Auto座舱平台系统单芯片SoC：车规芯片\n  - KT5030A：车规芯片\n  - NVIDIA DRIVE Orin：车规芯片\n  - VS919：车规芯片\n  - VS919L：车规芯片\n  - 征程5：车规芯片\n  - 御行系列域控芯片：车规芯片\n  - 骁龙8295：车规芯片\n  - C-V2X：CommunicationTechnology",
+      "expected_keywords": [
+        "奇瑞",
+        "C-Pilot"
+      ],
+      "keyword_hits": [
+        "C-Pilot"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2043,
+      "error": ""
+    },
+    {
+      "question": "速腾聚创发布了哪些技术？",
+      "category": "企业技术",
+      "answer": "图谱中共有 80 项技术实体，代表性条目如下：\n  - 城市NOA：ADASFunction\n  - ADS 3.0：智能驾驶/ADAS系统\n  - ANP3 Pro：智能驾驶/ADAS系统\n  - C-Pilot 5.0：智能驾驶/ADAS系统\n  - GARCIA OS：智能驾驶/ADAS系统\n  - NOP+：智能驾驶/ADAS系统\n  - NOP智慧领航辅助驾驶系统：智能驾驶/ADAS系统\n  - 华为ADS：智能驾驶/ADAS系统\n  - 第六代ADAS平台：智能驾驶/ADAS系统\n  - AD 5.0智驾大模型：算法技术\n  - 端到端自动驾驶：算法技术\n  - 讯飞星火大模型V4.0：算法技术\n  - 雷达-相机融合：算法技术\n  - 59度大电量增混电池：电池技术\n  - L600启晨电池：电池技术\n  - 准900V超快充固态电池：电池技术\n  - 刀片电池：电池技术\n  - 智能电池：电池技术\n  - 神盾短刀磷酸铁锂电池：电池技术\n  - 软包CTP一体化电池：电池技术\n  - 金沙江电池：电池技术\n  - 骁遥超级增混电池：电池技术\n  - 麒麟电池：电池技术\n  - 720kW独立风道超充系统：充电技术\n  - 800V高压平台：充电技术\n  - 兆瓦级充电堆：充电技术\n  - 地埋式全液冷充电系统：充电技术\n  - 闪充电池3.0：充电技术\n  - 天工08底盘：底盘技术\n  - 智能底盘预研技术：底盘技术\n  - 磐石底盘：底盘技术\n  - Dimensity Auto座舱平台系统单芯片SoC：车规芯片\n  - KT5030A：车规芯片\n  - NVIDIA DRIVE Orin：车规芯片\n  - VS919：车规芯片\n  - VS919L：车规芯片\n  - 征程5：车规芯片\n  - 御行系列域控芯片：车规芯片\n  - 骁龙8295：车规芯片\n  - C-V2X：CommunicationTechnology",
+      "expected_keywords": [
+        "速腾聚创",
+        "M3"
+      ],
+      "keyword_hits": [],
+      "forbidden_hits": [],
+      "score": 0.35,
+      "passed": false,
+      "latency_ms": 2054,
+      "error": ""
+    },
+    {
+      "question": "哪些车用了Orin？",
+      "category": "车型技术",
+      "answer": "图谱中共有 80 项技术实体，代表性条目如下：\n  - 城市NOA：ADASFunction\n  - ADS 3.0：智能驾驶/ADAS系统\n  - ANP3 Pro：智能驾驶/ADAS系统\n  - C-Pilot 5.0：智能驾驶/ADAS系统\n  - GARCIA OS：智能驾驶/ADAS系统\n  - NOP+：智能驾驶/ADAS系统\n  - NOP智慧领航辅助驾驶系统：智能驾驶/ADAS系统\n  - 华为ADS：智能驾驶/ADAS系统\n  - 第六代ADAS平台：智能驾驶/ADAS系统\n  - AD 5.0智驾大模型：算法技术\n  - 端到端自动驾驶：算法技术\n  - 讯飞星火大模型V4.0：算法技术\n  - 雷达-相机融合：算法技术\n  - 59度大电量增混电池：电池技术\n  - L600启晨电池：电池技术\n  - 准900V超快充固态电池：电池技术\n  - 刀片电池：电池技术\n  - 智能电池：电池技术\n  - 神盾短刀磷酸铁锂电池：电池技术\n  - 软包CTP一体化电池：电池技术\n  - 金沙江电池：电池技术\n  - 骁遥超级增混电池：电池技术\n  - 麒麟电池：电池技术\n  - 720kW独立风道超充系统：充电技术\n  - 800V高压平台：充电技术\n  - 兆瓦级充电堆：充电技术\n  - 地埋式全液冷充电系统：充电技术\n  - 闪充电池3.0：充电技术\n  - 天工08底盘：底盘技术\n  - 智能底盘预研技术：底盘技术\n  - 磐石底盘：底盘技术\n  - Dimensity Auto座舱平台系统单芯片SoC：车规芯片\n  - KT5030A：车规芯片\n  - NVIDIA DRIVE Orin：车规芯片\n  - VS919：车规芯片\n  - VS919L：车规芯片\n  - 征程5：车规芯片\n  - 御行系列域控芯片：车规芯片\n  - 骁龙8295：车规芯片\n  - C-V2X：CommunicationTechnology",
+      "expected_keywords": [
+        "Orin",
+        "车型"
+      ],
+      "keyword_hits": [
+        "Orin"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2065,
+      "error": ""
+    },
+    {
+      "question": "哪些车用了骁龙8295？",
+      "category": "车型技术",
+      "answer": "使用或关联“骁龙8295？”的车型共有 50 款，代表车型如下：\n  - 零跑汽车 零跑A10 403舒享版：零跑汽车，6.58万元，BEV，续航403km\n  - 零跑汽车 零跑A10 403悦享版：零跑汽车，6.98万元，BEV，续航403km\n  - 零跑汽车 零跑A10 505悦享版：零跑汽车，7.68万元，BEV，续航505km\n  - 零跑汽车 零跑A10 505激光雷达版：零跑汽车，8.68万元，BEV，续航505km\n  - 比亚迪 宋Pro DM DM-i 133KM 进取型：比亚迪，10.28万元，PHEV，续航133km\n  - 比亚迪 宋Pro DM DM-i 飞驰版 220KM 领先型：比亚迪，10.29万元，PHEV，续航1600km\n  - 比亚迪 宋Pro DM DM-i 133KM 超越型：比亚迪，11.28万元，PHEV，续航133km\n  - 比亚迪 宋Pro DM DM-i 飞驰版 220KM 超越型：比亚迪，11.59万元，PHEV，续航1600km\n  - 比亚迪 宋Pro DM DM-i 飞驰版 301KM 超越型：比亚迪，11.89万元，PHEV，续航1735km\n  - 小鹏汽车 小鹏MONA M03 540 长续航 Plus版：小鹏汽车，11.98万元，BEV，续航540km\n  - 零跑汽车 零跑C10 增程式 210悦享版：零跑汽车，12.28万元，EREV，续航1190km\n  - 零跑汽车 零跑C10 纯电版 530舒享版：零跑汽车，12.28万元，BEV，续航530km\n  - 比亚迪 宋Pro DM DM-i 220KM 超越型：比亚迪，12.28万元，PHEV，续航1600km\n  - 比亚迪 宋Pro DM DM-i 133KM 卓越型：比亚迪，12.58万元，PHEV，续航133km\n  - 小鹏汽车 小鹏MONA M03 640 超长续航 Plus版：小鹏汽车，12.98万元，BEV，续航640km\n  - 小鹏汽车 小鹏MONA M03 510 长续航 Max版：小鹏汽车，12.98万元，BEV，续航510km\n  - 比亚迪 宋Pro DM DM-i 220KM 卓越型：比亚迪，13.08万元，PHEV，续航1600km\n  - 零跑汽车 零跑C10 纯电版 605悦享版：零跑汽车，13.28万元，BEV，续航605km\n  - 零跑汽车 零跑C10 增程式 210激光雷达版：零跑汽车，13.28万元，EREV，续航1190km\n  - 比亚迪 宋Pro DM DM-i 飞驰版 301KM 卓越型：比亚迪，13.29万元，PHEV，续航1735km",
+      "expected_keywords": [
+        "8295",
+        "车型"
+      ],
+      "keyword_hits": [
+        "8295",
+        "车型"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2070,
+      "error": ""
+    },
+    {
+      "question": "有激光雷达的纯电SUV有哪些？",
+      "category": "车型筛选",
+      "answer": "图谱中共有 5 项Sensor 类技术，代表性条目如下：\n  - 192线激光雷达：传感器\n  - M3：传感器\n  - SIR-4K：传感器\n  - 禾赛AT128：传感器\n  - 速腾聚创M1：传感器",
+      "expected_keywords": [
+        "激光雷达",
+        "BEV",
+        "SUV"
+      ],
+      "keyword_hits": [
+        "激光雷达"
+      ],
+      "forbidden_hits": [],
+      "score": 0.675,
+      "passed": false,
+      "latency_ms": 2072,
+      "error": ""
+    },
+    {
+      "question": "宁德时代供应哪些车？",
+      "category": "供应链",
+      "answer": "图谱中，宁德时代 关联 80 款车型，覆盖 9 个品牌。\n覆盖品牌包括：吉利汽车、小米汽车、小鹏汽车、岚图、极氪、理想汽车、蔚来、阿维塔、零跑汽车。\n代表车型如下：\n  - 吉利汽车 缤越 1.5L 手动超能版：吉利汽车，6.68万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 缤越 1.5L CVT超能版：吉利汽车，7.38万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 缤越 1.5L CVT超能MAX：吉利汽车，7.88万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 缤越 缤越L 1.5TD DCT超越版：吉利汽车，8.48万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 缤越 缤越L 1.5TD DCT星钻版：吉利汽车，8.98万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星瑞 1.5T 东方曜·惊鸿版：吉利汽车，9.87万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星瑞 1.5T 东方曜·扶摇版：吉利汽车，10.47万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星瑞 1.5T 东方曜·昆仑版：吉利汽车，10.97万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星瑞 2.0T 东方曜·霄汉版：吉利汽车，11.87万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星瑞 2.0T 东方曜·揽星版：吉利汽车，12.97万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星越L 2.0TD 长风越山版：吉利汽车，13.97万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星越L 2.0TD 长风青云版：吉利汽车，14.77万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星越L 2.0TD 高功自动两驱东方曜霄汉版：吉利汽车，15.87万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星越L 2.0TD 高功自动两驱东方曜揽星版：吉利汽车，16.87万元，关系类型为 USES_BATTERY_PACK\n  - 吉利汽车 星越L 2.0TD 高功自动四驱东方曜望月版：吉利汽车，17.97万元，关系类型为 USES_BATTERY_PACK\n  - 小米汽车 小米SU7 后驱标准版：小米汽车，21.99万元，关系类型为 USES_BATTERY_CELL\n  - 小米汽车 小米SU7 后驱标准版：小米汽车，21.99万元，关系类型为 USES_BATTERY_PACK\n  - 小米汽车 小米SU7 后驱Pro版：小米汽车，24.99万元，关系类型为 USES_BATTERY_CELL\n  - 小米汽车 小米SU7 后驱Pro版：小米汽车，24.99万元，关系类型为 USES_BATTERY_PACK\n  - 小米汽车 小米YU7 超长续航后驱版：小米汽车，25.35万元，关系类型为 USES_BATTERY_CELL",
+      "expected_keywords": [
+        "宁德时代",
+        "车型"
+      ],
+      "keyword_hits": [
+        "宁德时代",
+        "车型"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 2071,
+      "error": ""
+    },
+    {
+      "question": "小米SU7参数",
+      "category": "车型详情",
+      "answer": "小米 是一个技术实体。\n相关关系如下：\n  - 小米 的“发布”指向 金沙江电池",
+      "expected_keywords": [
+        "小米",
+        "SU7",
+        "价格",
+        "续航"
+      ],
+      "keyword_hits": [
+        "小米"
+      ],
+      "forbidden_hits": [],
+      "score": 0.625,
+      "passed": false,
+      "latency_ms": 4071,
+      "error": ""
+    },
+    {
+      "question": "小米SU7和蔚来ES8对比",
+      "category": "车型对比",
+      "answer": "下面对比 小米汽车 小米SU7 后驱标准版 和 蔚来 蔚来ES8 玄金特别版 的核心参数。\n  - 价格：21.99万 对比 45.68万\n  - 续航：720km 对比 635km\n  - 加速：5.28s 对比 3.97s\n  - 极速：240km/h 对比 220km/h\n  - 轴距：3000mm 对比 3130mm\n  - 快充功率：-kW 对比 -kW\n  - 激光雷达数量：1个 对比 1个",
+      "expected_keywords": [
+        "小米",
+        "蔚来",
+        "价格",
+        "续航"
+      ],
+      "keyword_hits": [
+        "小米",
+        "蔚来",
+        "价格",
+        "续航"
+      ],
+      "forbidden_hits": [],
+      "score": 0.95,
+      "passed": true,
+      "latency_ms": 4099,
+      "error": ""
+    },
+    {
+      "question": "你好",
+      "category": "日常对话",
+      "answer": "你好，我是汽车技术知识图谱问答助手。你可以问我智能驾驶、电池、芯片、激光雷达、充电技术、整车平台，以及这些技术和企业、车型之间的关系。",
+      "expected_keywords": [
+        "汽车技术",
+        "知识图谱"
+      ],
+      "keyword_hits": [
+        "汽车技术",
+        "知识图谱"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 0,
+      "error": ""
+    },
+    {
+      "question": "你能做什么？",
+      "category": "日常对话",
+      "answer": "你可以这样问：有哪些ADAS系统、C-Pilot 5.0的算力是多少、华为研发了哪些技术、哪些车用了Orin、有激光雷达的纯电SUV有哪些、统计技术分类。",
+      "expected_keywords": [
+        "ADAS",
+        "Orin",
+        "技术"
+      ],
+      "keyword_hits": [
+        "ADAS",
+        "Orin",
+        "技术"
+      ],
+      "forbidden_hits": [],
+      "score": 1.0,
+      "passed": true,
+      "latency_ms": 0,
+      "error": ""
+    }
+  ]
+}
